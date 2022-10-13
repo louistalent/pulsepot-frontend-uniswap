@@ -1,0 +1,17 @@
+.tokenSelectionContainer {
+    position: relative;
+}
+
+.show_tokenSelection {
+    position: absolute;
+    background: white;
+    z-index: 10;
+    width: 380px;
+    border-radius: 5px;
+    width: 300px;
+    margin: auto;
+    top: 100px;
+    right: 0;
+    left: 0;
+    padding: 20px 30px;
+}

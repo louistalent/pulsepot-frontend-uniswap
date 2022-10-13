@@ -1,0 +1,25 @@
+.user-cpi {
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.user-cpi__entry {
+    /* color: #acacac; */
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.user-cpi__percentagechance {
+    /* color: #acacac; */
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.user-cpi__percentagechance span {
+    font-weight: 900;
+}

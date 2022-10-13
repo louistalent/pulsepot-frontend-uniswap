@@ -1,0 +1,49 @@
+.ConnectWalletModal {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: rgba(240, 255, 255, 0.671);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.ConnectWalletModal_inner {
+    background: linear-gradient(197deg, #00dcff, 40%, #d43bde 64%, red) !important;
+    margin: auto;
+    border-radius: 20px;
+    display: grid;
+    justify-items: end;
+}
+
+.ConnectWalletModal_innerDiv {
+    border-radius: 20px;
+    margin: 4px;
+    background: #fffcfd;
+    padding: 100px 100px;
+}
+
+.ConnectWalletModal_inner_div {
+    width: 500px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgba(130, 130, 130, 0.486);
+    margin: 10px 0px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 20px;
+    ;
+}
+
+.ConnectWalletModal_close_icon {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    display: flex;
+}
+
+.ConnectWalletModal_close_icon img {
+    width: 30px;
+}

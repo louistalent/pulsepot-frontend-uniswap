@@ -1,0 +1,13 @@
+.game-rules ul {
+    font-size: 15px;
+    padding: 5px;
+    width: 500px;
+    margin: auto;
+    font-weight: 300;
+}
+
+.game-rules ul p {
+    padding: 10px;
+}
+
+/* .game-rules ul li {} */

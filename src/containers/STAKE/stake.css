@@ -1,0 +1,28 @@
+.staking-info .text-center {
+    text-align: center;
+}
+
+.staking-info .mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.staking-info__ {
+    background-color: #d9ab0d;
+    background: #1fc7d4;
+
+}
+
+.staking-info .MuiLinearProgress-colorPrimary {
+    background: #474654 !important;
+}
+
+.stkaing-info-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.staking-info .stkaing-info-col {
+    flex: 1;
+    justify-content: space-between;
+    border-right: 1px grey solid;
+}

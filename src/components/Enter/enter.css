@@ -1,0 +1,165 @@
+.Enter {
+    height: 200px;
+    width: 450px;
+    margin: 25px 0px 25px 0px;
+    border-radius: 10px;
+}
+
+.Enter_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    line-height: 45px;
+    height: 45px;
+    font-weight: 600;
+}
+
+.Enter_header div:first-child {
+    width: 100%;
+    text-align: center;
+}
+
+.Enter_header div:nth-child(2) {
+    /* border-left: 1.5px solid #c9c9c9; */
+    width: 100%;
+    text-align: center;
+}
+
+.Enter_not_selected {
+    background-color: #e8e8e8;
+}
+
+.Enter_transaction_ {
+    height: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-items: end;
+}
+
+.Enter_connect {
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.Enter_transaction_amount input {
+    text-align: left;
+    min-height: 30px;
+    font-size: 30px;
+    outline: none;
+    border: 0px;
+    border-radius: 15px;
+    max-width: 150px;
+    background: #e8e8e800;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    color: grey;
+}
+
+.Enter_transaction_amount div {
+
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+}
+
+.Enter_transaction_amount input:focus-visible {
+    border: 0px !important;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    outline: none;
+}
+
+.Enter_transaction_select_token {
+    display: flex;
+    width: 90px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 1px 3px 1px rgb(222 222 222);
+    padding: 8px;
+    border-radius: 15px;
+    margin-right: 20px;
+
+}
+
+.Enter_transaction_select {
+    position: relative;
+}
+
+.Enter_transaction_select span {
+    position: absolute;
+    width: 31px;
+    text-align: Center;
+    max-height: 10px;
+    min-height: 10px;
+    font-size: 8px;
+    text-transform: uppercase;
+    padding: 4px 4px;
+    border-radius: 3px;
+    background-color: #fce2f6;
+    color: #d31de8;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: -50px;
+    margin-top: 5px;
+}
+
+.Enter_transaction_select img {
+    width: 15px;
+    height: 15px;
+}
+
+img.Enter_transaction_select_token_img {
+    width: 20px;
+    height: 20px;
+}
+
+.Enter_transaction_token_balance {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.Enter_connect {
+    font-weight: 400;
+    font-size: 20px;
+    width: auto;
+    -webkit-box-align: center;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    user-select: none;
+    width: 80%;
+    margin: auto;
+
+}
+
+.Enter_connectWallet {
+    background-color: rgb(253, 234, 241);
+    border: 0.5px solid rgb(213, 0, 102);
+    color: rgb(213, 0, 102);
+    padding: 5px 0px;
+    width: 90%;
+}
+
+.Enter_connectWallet:hover {
+    border: 1px solid rgb(241, 201, 218);
+}
+
+.Enter_SendtoPot {
+    background: #edf8d8;
+    color: #557847;
+}
+
+.Enter_SendtoPot:hover {
+    background-color: #d1ee9c;
+    cursor: pointer;
+}
+
+.Enter_SendtoPot:focus {
+    background-color: #a2d641;
+}

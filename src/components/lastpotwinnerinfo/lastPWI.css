@@ -1,0 +1,53 @@
+.lastpwi>span {
+    color: #acacac;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.lastpwi-info {
+    display: grid;
+    text-align: center;
+    border: 1px solid #dedede;
+    margin: 16px 0px;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+
+.lastpwi-info__crown {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    justify-content: space-around;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.lastpwi-info__crown img {
+    width: 25px;
+    margin: 5px;
+    margin-bottom: 0px;
+}
+
+.lastpwi-info__congrat {
+    font-weight: 700;
+    font-size: 13px;
+    color: #212529;
+}
+
+.lastpwi-info__congrat span {
+    color: #bcbcbc;
+}
+
+.lastpwi-info__won {
+    color: #212529;
+    font-size: 13px;
+}
+
+.lastpwi-info__txlink a {
+    color: #3f93ea;
+    font-size: 13px;
+}
+
+.lastpwi-info__txlink a:hover {
+    color: #0056b3;
+}

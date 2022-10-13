@@ -1,0 +1,177 @@
+.Land {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Land_logo {
+    width: 80px;
+}
+
+.land_heading1 {
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.land_heading2 {
+    margin-top: 20px;
+    color: grey;
+}
+
+.land_heading3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #d2d2d2;
+}
+
+.land_heading3 img {
+    width: 40px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.roulettes_warning {
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    top: -100px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    color: grey;
+}
+
+.roulettes_warning div:nth-child(2) {
+    font-size: 16px;
+    color: white;
+}
+
+.roulettes_warning img {
+    width: 30px;
+}
+
+.Roulettes {
+    min-width: 60vw;
+    max-width: 1700px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Roulette {
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 2px;
+    position: relative;
+    width: 220px;
+    z-index: 100;
+    margin: 70px 30px;
+    gap: 20px;
+}
+
+.Roulette_inner {
+    border-radius: 10px;
+    padding: 0px 10px 20px 10px;
+    background-color: #3a3939;
+}
+
+.roulette_live {
+    position: absolute;
+    z-index: 5;
+    right: 10px;
+    top: -1px;
+    transform: rotate(0deg);
+    width: 50px;
+}
+
+.roulette_index {
+    text-align: left;
+    padding: 10px;
+    color: grey;
+}
+
+.roulette_img {
+    margin-bottom: 20px;
+}
+
+.roulette_img img {
+    width: 60px;
+}
+
+.roulette_title {
+    font-size: 26px;
+    font-weight: 650;
+    margin-bottom: 15px;
+}
+
+.roulette_info {
+    color: grey;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.roulette_bidnow {
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(to top, rgb(0, 104, 0) 0%, rgb(0, 192, 0) 100%);
+    width: 100px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.roulette_inspect {
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(to top, rgb(83, 83, 83) 0%, rgb(155, 155, 155) 100%);
+    width: 100px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.roulette_soldout {
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(to top, rgb(248, 100, 0) 0%, rgb(240, 159, 10) 100%);
+    width: 100px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.roulette_highestbid {
+    font-size: 14px;
+}
+
+.roulette_highestbid span {
+    color: grey;
+}
+
+
+@media (max-width:1000px) {
+    .Roulettes {
+        width: 100vw;
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+}

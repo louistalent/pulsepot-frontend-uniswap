@@ -1,0 +1,8 @@
+.user-address{
+    font-weight: 600;
+    padding: 3px;
+}
+
+.user-address span:first-child{
+    border-radius: 10px;
+}

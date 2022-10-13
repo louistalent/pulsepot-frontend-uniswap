@@ -1,0 +1,77 @@
+.menuTitle {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MenuContent {
+    padding: 0px 10px;
+}
+
+.menuTitle>div {
+    display: flex;
+
+}
+
+.menuItem img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.menuItems {
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* .menuItems_light {
+    background: #f6f6f6;
+}
+
+.menuItems_dark {
+    background: #424553;
+} */
+
+.menuItem,
+.menuItem_a {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: 20px 85px 20px;
+    justify-content: center;
+    font-size: 11px;
+}
+
+.menuItem {
+    margin: 2px 0px;
+    padding: 8px 4px;
+}
+
+.menuItem_a a {
+    margin: 2px 0px;
+    padding: 8px 4px;
+}
+
+.menuItem_a:hover {
+    cursor: pointer;
+}
+
+.menuItem a,
+.menuItem_a a {
+    text-decoration: none;
+    /* color: rgb(48, 48, 48); */
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 20px 100px 20px;
+}
+
+.CurrentGame {
+    background-image: linear-gradient(180deg, #474e5a, 40%, #676c79 64%, #7b828e);
+    border-radius: 15px;
+    padding: 8px !important;
+}
+
+.CurrentGame a {
+    color: white !important;
+}

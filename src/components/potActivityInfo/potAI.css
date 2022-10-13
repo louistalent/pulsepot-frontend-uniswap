@@ -1,0 +1,9 @@
+.pot-activityinfo {
+    overflow: auto;
+
+}
+
+.pot-activityinfo__columnreverse {
+    display: flex;
+    flex-direction: column-reverse;
+}

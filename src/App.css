@@ -1,0 +1,45 @@
+.App {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+    max-width: 1400px;
+    grid-template-columns: 180px 1220px;
+    height: 100%;
+    margin-bottom: 200px;
+}
+
+.Page {
+    display: grid;
+    justify-items: center;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    min-height: 500px;
+}
+
+.page_title {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 44px;
+    padding: 40px 0px 0px 140px;
+}
+
+.page_content {
+    /* width: 900px; */
+    padding: 40px 20px;
+    text-align: center;
+    margin: auto;
+}
+
+@keyframes opacitychange {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.1;
+    }
+}

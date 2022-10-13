@@ -1,0 +1,75 @@
+.potcontract-addinfo {
+    display: flex;
+    justify-items: center;
+    margin-top: 20px;
+    margin-top: 2px;
+    background: white;
+}
+
+.potcontract-addinfo_qrcode img {
+    width: 120px;
+    padding: 10px 30px;
+}
+
+.potcontract-addinfo_address {
+    padding: 30px;
+    padding-left: 0px;
+}
+
+
+.potcontract-addinfo_address__ {
+    display: flex;
+    align-items: center;
+}
+
+.potcontract-addinfo_address--copyimg {
+    border: 1px solid #ccc;
+    display: inline-flex;
+    align-items: flex-end;
+    margin-top: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    /* margin-left: -50px; */
+}
+
+.potcontract-addinfo_address--copy {
+    font-size: 11px !important;
+    height: 20px;
+    padding: 0px 0px 0px 10px;
+}
+
+.potcontract-addinfo_address--img {
+    background: #dedede;
+    padding: 3px 5px;
+}
+
+.potcontract-addinfo_address--img img {
+    width: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.potcontract-addinfo span {
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+    border-radius: 5px;
+}
+
+.potcontract-addinfo span span {}
+
+.potcontract-addinfo_address--st {
+    background: #edf8d8;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.potcontract-addinfo_address--st:hover {
+    cursor: pointer;
+}
+
+.potcontract-addinfo_address--st img {
+    width: 15px;
+    margin-left: 10px;
+    /* margin-bottom: -5px; */
+}

@@ -1,0 +1,570 @@
+{
+    "networks": {
+        "4": {
+            "address": "0x6E011114b3633db7B27B1663a61eDf4f16F87c73"
+        }
+    },
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "nftAddr",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_PLSPAddress",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "player",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint8",
+                            "name": "betType",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "number",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct RoulettePot.Bet[]",
+                    "name": "bets",
+                    "type": "tuple[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "RouletteSpinned",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "balance",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "reason",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                }
+            ],
+            "name": "TokenSwapFailed",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "TransferFailed",
+            "type": "event"
+        },
+        {
+            "inputs": [],
+            "name": "PLSPAddress",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint8",
+                            "name": "betType",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "number",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct RoulettePot.Bet",
+                    "name": "b",
+                    "type": "tuple"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "number",
+                    "type": "uint256"
+                }
+            ],
+            "name": "_isInBet",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tokenAddress",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "maxBet",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256"
+                }
+            ],
+            "name": "addCasino",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "addLiquidtyWithEth",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "addLiquidtyWithTokens",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "casinoNFTAddress",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint8",
+                            "name": "betType",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "number",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct RoulettePot.Bet[]",
+                    "name": "bets",
+                    "type": "tuple[]"
+                }
+            ],
+            "name": "getMaximumReward",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getPulsePrice",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "tokenAddress",
+                    "type": "address"
+                }
+            ],
+            "name": "getTokenUsdPrice",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint8",
+                            "name": "betType",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "number",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct RoulettePot.Bet[]",
+                    "name": "bets",
+                    "type": "tuple[]"
+                }
+            ],
+            "name": "placeBetsWithEth",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint8",
+                            "name": "betType",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "number",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct RoulettePot.Bet[]",
+                    "name": "bets",
+                    "type": "tuple[]"
+                }
+            ],
+            "name": "placeBetsWithTokens",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "removeLiquidtyWithEth",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "removeLiquidtyWithTokens",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "renounceOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "newMaxBet",
+                    "type": "uint256"
+                }
+            ],
+            "name": "setMaxBet",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "swapProfitFees",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "tokenIdToCasino",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "tokenAddress",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "liquidity",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "initialMaxBet",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "maxBet",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "int256",
+                    "name": "profit",
+                    "type": "int256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "lastSwapTime",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "stateMutability": "payable",
+            "type": "receive"
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+.faucet_container {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+}
+
+.faucet_content1 {
+    width: max-content;
+    text-align: center;
+    font-weight: 900;
+    margin-right: 20px;
+}
+
+.faucet_content1 img {
+    width: 25px;
+}
+
+.faucet_content2 {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: end;
+    border-radius: 10px;
+    position: relative;
+}
+
+.faucet_content2 input {
+    height: 30px;
+    border-radius: 10px 0px 0px 10px;
+    border: 0px;
+    background: #e3e3e3;
+    padding-left: 10px;
+}
+
+.faucet_content2 input:focus-visible {
+    border: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    outline: none;
+}
+
+.faucet_content2_error {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+
+.faucet_content2_1 {
+    background: linear-gradient(197deg, #00dcff, 40%, #d43bde 64%, red);
+    height: 22px;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    padding: 8px 5px 2px 5px;
+    width: 40px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.faucet_content2_2 {
+    background: linear-gradient(197deg, #56ff6c, 40%, #00bd10 64%, rgb(81, 165, 3));
+    height: 22px;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    padding: 7px 5px 3px 5px;
+    width: 40px;
+
+}
+
+.faucet_content2 img {
+    margin-left: 8px;
+    width: 20px;
+}

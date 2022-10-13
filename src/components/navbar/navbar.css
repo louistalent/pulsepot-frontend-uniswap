@@ -1,0 +1,74 @@
+.Navbar {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.Navbar a {
+    text-decoration: none;
+}
+
+.nbContent1 {
+    display: flex;
+}
+
+.nbContent1>div {
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0px 5px;
+}
+
+.nbContent1 img {
+    width: 20px;
+    margin-bottom: -6px;
+}
+
+.nbContent1 img:last-child {
+    width: 13px;
+    padding-left: 5px;
+}
+
+.nbContent2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    float: right;
+}
+
+.nbContent2 img {
+    width: 30px;
+    height: 30px;
+}
+
+.nbContent2-pphase {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.nbContent2-pphase img {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+}
+
+.nbContent2-connect {
+    padding: 10px 20px;
+    border: 1px solid rgb(252, 11, 212);
+    border-radius: 20px;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.nbContent2-connect-dark {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+}

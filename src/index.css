@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #303030;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card {
+  box-shadow: 0px 0px 6px 4px rgb(235 235 235);
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
+.identicon {
+  border-radius: 5px;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+
+
+html::-webkit-scrollbar {
+  width: 10px;
+  /* margin: 50px 10px; */
+}
+
+/* Track */
+html::-webkit-scrollbar-track {
+  width: 10px;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  border: solid 3px rgba(255, 0, 0, 0);
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+  width: 5px;
+  border-radius: 10px;
+  background: #c0c0c0;
+  border: solid 3px rgba(255, 0, 0, 0);
+}
+
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+.none {
+  display: none;
+}
+
+.light_bg .card {
+  background: white;
+  color: #303030;
+  box-shadow: 0px 0px 6px 4px rgb(235 235 235);
+}
+
+.light_bg a {
+  color: #303030;
+}
+
+.light_bg .menuTitle div,
+.light_bg .menuItem a {
+  color: grey;
+
+}
+
+
+.light_bg .menuTitle div {
+  color: rgb(189, 189, 189);
+}
+
+.light_bg .Enter_not_selected {
+  background: #e8e8e8;
+  border: 0px solid;
+  border-left: 1.5px solid #c9c9c9;
+}
+
+.light_bg .page_title {
+  color: grey;
+}
+
+.dark_bg .card {
+  background: #393b47;
+  color: #c5c5c5;
+  box-shadow: 0px 0px 2px 0px rgb(54, 54, 54);
+}
+
+.dark_bg a {
+  color: #c5c5c5;
+}
+
+
+
+.dark_bg .menuItem div {
+  color: white;
+}
+
+.dark_bg .menuTitle div {
+  color: white;
+}
+
+.dark_bg .Enter_not_selected {
+  background: #2d2e36b2;
+  border: 1px solid #2d2e36;
+}
+
+.dark_bg .Enter_selected {
+  border-bottom: 1px solid #1015226b;
+}
+
+.dark_bg .Enter_transaction_select_token {
+  box-shadow: none;
+  background: #2d2e36;
+}
+
+.dark_bg .Enter_connectWallet {
+  background-color: rgb(41 41 41 / 31%);
+  border: 1px solid #adbed473;
+  color: rgb(255 255 255);
+  padding: 2px 0px;
+  width: 90%;
+}
+
+.dark_bg .Enter_connect {
+  color: #c5c5c5;
+}
+
+.dark_bg .singlepe {
+  border-bottom: 1px solid rgb(75 75 75);
+}
+
+.dark_bg .lastpwi-info {
+  border: 1px solid rgb(75 75 75);
+  ;
+}
+
+.dark_bg .potcontract-addinfo {
+  background-color: #393b47;
+}
+
+.dark_bg .Navbar .card,
+.dark_bg .Menu.card {
+  box-shadow: 1px 1px 6px 1px rgb(5 5 5 / 34%);
+}

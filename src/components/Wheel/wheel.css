@@ -1,0 +1,129 @@
+.wheel_container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+    height: 400px;
+}
+
+.wheel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.wheel_inner1 {
+    background: linear-gradient(90deg, rgba(253, 2, 19, 1) 0%, rgba(255, 43, 222, 1) 28%, rgba(124, 2, 255, 1) 64%, rgba(0, 219, 255, 1) 100%);
+    border-radius: 100%;
+    height: 330px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+}
+
+.wheel_inner2 {
+    width: 260px;
+    height: 260px;
+    margin: auto;
+    background: whitesmoke;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.wheel_inner2_dark {
+    width: 260px;
+    height: 260px;
+    margin: auto;
+    background: #393b47;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.wheel_inner3 {
+    display: grid;
+    justify-items: center;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 100%;
+    grid-template-rows: 50px 30px 30px;
+    align-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.wheelTimer {
+    font-size: 38px;
+    background-image: linear-gradient(197deg, #00dcff, 40%, #d43bde 64%, red) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.wheel_participant {
+    font-size: 16px;
+    color: #7d838a;
+}
+
+.wheelusdValue {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.burn_bonus {
+    display: grid;
+    align-items: end;
+    margin-bottom: 50px;
+    font-size: 8px;
+    min-width: max-content;
+}
+
+.burn_bonus>div {
+    text-align: center;
+}
+
+.burn_bonus img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.burn_bonus .card {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 58px;
+    font-size: 14px;
+}
+
+.wheel__arrowhead {
+    position: absolute;
+    top: -46px;
+    z-index: 5;
+}
+
+.wheel__arrowhead img {
+    width: 20px;
+    height: 30px;
+}
+
+.displayedTime span {
+    background-image: linear-gradient(197deg, #00dcff, 40%, #d43bde 64%, red) !important;
+    font-weight: 600 !important;
+}
+
+.displayedTime span {
+    font-size: 38px !important;
+    font-weight: 600 !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}

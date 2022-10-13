@@ -1,0 +1,16 @@
+.currentPotInfo__potstarted {
+    color: #acacac;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.currentPotInfo {
+
+    width: 400px;
+    margin: auto;
+}
+
+.currentPotInfo__potentries {
+    margin-bottom: 20px;
+}
